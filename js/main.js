@@ -22,6 +22,16 @@ reco.recognition.onresult = function (event) {
 
         $('#itemList div:last-child').remove();
 
+    } else if (transcript == 'enviar') {
+
+        var body = '';
+
+        $("#itemList > div").each( function() {
+            body += $(this).html() + "%0a";
+        });
+
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=marcos.loiola@gmail.com&su=Voice List&body='+ body);
+
     } else {
 
         var item = $('<div/>')

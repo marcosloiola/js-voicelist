@@ -1,3 +1,11 @@
+h1 {
+    font-size: 16pt;
+}
+
+h2 {
+    font-size: 14pt;
+}
+
 .itemList {
     width: 100%;
     height: 100%;
